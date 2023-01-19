@@ -1,6 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
 
+    body {
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        background-color: #000;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+    }
+
+    h5 {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.7;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        padding: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+    }
+
+    .fixed.top.left{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 2rem;
+    }
+
+    .right{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 15% 15% 0% 0%;
+    }
+
+    .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: white;
+    border-radius: 100%;
+    rotate: 10deg;
+    }
+
+    .contactMe.top.right{
+        color: black;
+        margin-left: 15%;
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
+        background-color: #000;
+    }
+
+    .home div {
+        margin-top: 2rem;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .formations {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #000;
+    }
