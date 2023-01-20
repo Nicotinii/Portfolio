@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="media.css">
+
+
+    <title>Portfolio</title>
 </head>
+
+
 
 
 <body>
@@ -23,29 +29,52 @@
         </ul>
     </nav>
 
-    <div class=" right">
-        <div class="box">
-        <h5 class="contactMe top right">CONTACTEZ <br> MOI</h5>
-        </div>
+    <div class="box right">
+        <a class="round" href="mailto:nml.lefevre@gmail.com">
+            <h5 class="contactMe top right">CONTACTEZ <br> MOI</h5>
+        </a>
     </div>
 
     <section class="home">
 
-
-        <h1> DEVELOPPEUR WEB <br> et WEB mobile <br> basé a <br> paris </h1>
+        <h1 class="title"> &nbsp DEVELOPPEUR WEB <br> &nbsp &nbsp  et WEB mobile <br> basé a <br>  &nbsp &nbsp &nbsp  paris </h1>
     
-        <div><img src="" alt="arrow"></div>
+        <div class="img left"><a href="#about"><img  src="assets/img/arrow.svg" alt="arrow"></a></div>
 
     </section>
 
     <section class="about" id="about">
         <h5> A PROPOS </h5>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
+        <img class="pdp" src="assets/img/photoDeProfile.png" alt="Photo de Profil">
     </section>
 
     <section class="skills" id="skills">
         <h5> COMPETENCES </h5>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
+        <p> Ceci son mes compétences </p>
+        <ul class="icone">
+            <li> <img src="assets/icon/html.svg" alt="html"> HTML</li>
+            <li> <img src="assets/icon/css.svg" alt="css"> CSS</li>
+            <li> <img src="assets/icon/JAVASCRIPT.svg" alt="js"> JAVASCRIPT</li>
+            <li> <img src="assets/icon/PHP.svg" alt="php"> PHP</li>
+            <li> <img src="assets/icon/mysql.svg" alt="SQL"> MYSQL</li>
+        </ul>
+
+        <ul class="icone">
+            <li> <img src="assets/icon/scss.svg" alt="scss"> SCSS</li>
+            <li> <img src="assets/icon/ANGULAR.svg" alt="ANGULAR"> ANGULAR</li>
+            <li> <img src="assets/icon/SYMFONY.svg" alt="SYMFONY"> SYMFONY</li>
+            <li> <img src="assets/icon/BOOTSTRAP.svg" alt="bootstrap"> BOOTSTRAP</li>
+            <li> <img src="assets/icon/WORDPRESS.svg" alt="wordpress"> WORDPRESS</li>
+        </ul>
+
+        <ul class="icone">
+            <li> <img src="assets/icon/PHOTOSHOP.svg" alt="photoshop"> PHOTOSHOP</li>
+            <li> <img src="assets/icon/ILLUSTRATOR.svg" alt="illustrator"> ILLUSTRATOR</li>
+            <li> <img src="assets/icon/FIGMA.svg" alt="figma"> FIGMA</li>
+            <li> <img class="fusion360" src="assets/icon/fusion360.png" alt="fusion360"> fusion360</li>
+        </ul>
+
     </section>
 
     <section class="formations" id="formations">
@@ -53,21 +82,53 @@
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
     </section>
     
-    <section class="projects" id="projects">
+    <section class="projets" id="projets">
         <h5> PROJETS </h5>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
+        <p> Voici mes projets </p>
+        <div class="card-grid">
+
+            <a class="card one" href="#">
+              <div class="card__background" style="background-image: url(https://pictures.abebooks.com/isbn/9781695667099-fr.jpg)"></div>
+              <div class="card__content">
+                <p class="card__category">ANGULAR</p>
+                <h3 class="card__heading">Pokedex</h3>
+              </div>
+            </a>
+
+            <a class="card two" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="card__content">
+                <p class="card__category">PHP</p>
+                <h3 class="card__heading">DonkeyEvent</h3>
+              </div>
+            </a>
+
+            <a class="card three" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="card__content">
+                <p class="card__category">ANGULAR & SYMFONY</p>
+                <h3 class="card__heading">GreenEat</h3>
+              </div>
+            </a>
+
+          <div>
     </section>
 
     <section class="contact" id="contact">
         <h5> CONTACT </h5>
-        <h1> nml.lefevre@gmail.com </h1>
+        <h1 class="mail"> nml.lefevre@gmail.com </h1>
 
-        <h5> MES RESEAUX </h5>
+        <h5> Mon github </h5>
         <ul>
-            <li><a href="#"> <img src="" alt="github"> </a></li>
+            <li><a href="https://github.com/Nicotinii"> <img src="assets/icon/github.svg" alt="github"> </a></li>
         </ul>
 
     </section>
+
+    <footer>
+        <p> &copy; 2023 - NML </p>
+    </footer>
+
     
 </body>
 </html>

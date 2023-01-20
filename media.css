@@ -1,0 +1,126 @@
+@media screen and (max-width: 1000px) {
+h1{
+    font-size: 3rem;
+}
+section{
+    margin-left: 16%;
+    margin-right: 29%;
+}
+
+.home {
+    height: 90vh;
+}
+
+
+.about {
+    height: 50vh;
+}
+
+
+.skills {
+    height: 50vh;
+}
+
+.icone {
+    height: 50vh;
+}
+
+
+.formations {
+    height: 50vh;
+}
+
+.projets {
+    height: 300vh;
+}
+
+.card-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+
+  
+  .card{
+    list-style: none;
+    position: relative;
+  }
+
+  .one{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .two{
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .three{
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+.card__heading{
+    font-size: 1.3em;
+  }
+
+.contact {
+    height: 80vh;
+}
+}
+
+@media screen and (max-width: 850px) {
+
+    body{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        line-height: 4;
+    }
+
+    .img.left{
+        padding-top: 40vh;
+    }
+    
+    section{
+        margin-left: 16%;
+        margin-right: 29%;
+    }
+    
+    .home {
+        height: 90vh;
+    }
+    
+    
+    .about {
+        height: 50vh;
+    }
+    
+    
+    .skills {
+        height: 50vh;
+    }
+    
+    .icone {
+        height: 50vh;
+    }
+    
+    
+    .formations {
+        height: 50vh;
+    }
+    
+    .projets {
+        height: 200vh;
+    }
+
+   
+
+
+    
+    .contact {
+        height: 40vh;
+    }
+    }
+    

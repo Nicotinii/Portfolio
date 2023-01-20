@@ -4,11 +4,12 @@
         padding: 0;
         box-sizing: border-box;
         color: white;
+        list-style: none;
     }
 
     body {
         font-family: 'Sofia Sans Condensed', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         line-height: 1.5;
         background-color: #000;
@@ -21,6 +22,11 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         margin-bottom: 1rem;
+        white-space: nowrap;
+    }
+
+    .title{
+        padding: 1rem;
     }
 
     h5 {
@@ -38,6 +44,7 @@
         line-height: 1.5;
         margin-bottom: 1rem;
     }
+
 
     nav {
         position: fixed;
@@ -66,6 +73,18 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         text-decoration: none;
+        
+    }
+
+    nav ul li a:hover {
+        transition: 0.5s;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 
+                     0 0 15px #FFF,
+                     0 0 20px #49ff18,
+                     0 0 30px #49FF18, 
+                     0 0 40px #49FF18, 
+                     0 0 55px #49FF18, 
+                     0 0 75px #49ff18;
     }
 
     .fixed.top.left{
@@ -76,26 +95,53 @@
         padding: 2rem;
     }
 
-    .right{
+    .box.right{
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        padding: 15% 15% 0% 0%;
+        padding: 7% 15% 0% 0%;
     }
 
-    .box{
+    .round{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 1.3%;
     background: white;
     border-radius: 100%;
     rotate: 10deg;
     }
 
+    .round:hover{
+        background: #46f017;
+        transition: 3s;
+        box-shadow: 0 0 5px #49ff18, 0 0 10px #49ff18, 
+                     0 0 15px #49ff18,
+                     0 0 20px #49ff18,
+                     0 0 30px #49FF18, 
+                     0 0 40px #49FF18, 
+                     0 0 55px #49FF18, 
+                     0 0 75px #49ff18;
+        }
+
     .contactMe.top.right{
         color: black;
-        margin-left: 15%;
+        margin-left: 10%;
+        margin-top: 25%;
+    }
+
+    .img.left{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 10vh;
+    }
+
+
+    section{
+        margin-left: 10%;
+        margin-right: 17%;
     }
 
     .home {
@@ -103,8 +149,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 70vh;
-        background-color: #000;
     }
 
     .home div {
@@ -116,17 +160,38 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        background-color: #000;
+        height: 50vh;
+    }
+
+    .pdp{
+        width: 20%
     }
 
     .skills {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .icone li{
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        background-color: #000;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .fusion360{
+        height: 50px;
     }
 
     .formations {
@@ -134,6 +199,21 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        background-color: #000;
+        height: 50vh;;
+    }
+
+    .projets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300vh;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
     }
