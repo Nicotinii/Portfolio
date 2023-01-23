@@ -1,29 +1,14 @@
-:root{
-    --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
-    --spacing-s: 8px;
-    --spacing-l: 24px;
-
-  }
-  
-
-  
-  .card-grid{
+.cardGrid{
+  width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: var(--spacing-l);
-    grid-row-gap: var(--spacing-l);
-    width: 100%;
-    margin: 10%;
+    grid-column-gap: 0px;
+    grid-row-gap: 30vh;
   }
-  
-
   
   .card{
     list-style: none;
-    position: relative;
   }
 
   .one{
@@ -39,53 +24,43 @@
   }
   
   .card:before{
-    content: '';
-    display: block;
-    padding-bottom: 150%;
     width: 100%;
   }
   
-  .card__background{
-    background-size: cover;
+  .cardBackground{
+    width: 100%;
     background-position: center;
-    border-radius: var(--spacing-l);
-    bottom: 0;
+    border-radius: 10px;
     filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
     transform-origin: center;
     transform: scale(1) translateZ(0);
     transition: 
       filter 300ms linear,
       transform 300ms linear;
   }
+
+  .cardBackground img{
+    width: 100%;
+  }
   
-  .card:hover .card__background{
+  .card:hover .cardBackground{
     transform: scale(1.05) translateZ(0);
   }
   
-  .card:not(:hover) .card__background{
+  .card:not(:hover) .cardBackground{
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(9px);
   }
+
   
-  .card__content{
-    left: 0;
-    padding: var(--spacing-l);
-    position: absolute;
-    top: 0;
-  }
-  
-  .card__category{
-    color: var(--text-light);
+  .cardCategory{
+    color: rgba(255,255,255,0.6);
     font-size: 0.9em;
-    margin-bottom: var(--spacing-s);
+    margin-bottom: var(0px);
     text-transform: uppercase;
   }
   
-  .card__heading{
-    color: var(--text-lighter);
+  .cardHeading{
+    color: rgba(255,255,255,0.9);
     font-size: 1.9em;
     line-height: 1.4;
     word-spacing: 100vw;

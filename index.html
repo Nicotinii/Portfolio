@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,44 +15,53 @@
 
 
 
-
+<!-- PORTFOLIO ##############################################################################################-->
 <body>
 
     <h5 class="fixed top left">Portfolio de <br> LEFEVRE <br> NICOLAS</h5>
-
+<!-- NAVBAR ##############################################################################################-->
     <nav>
         <ul>
-            <li><a href="#">A PROPOS</a></li>
-            <li><a href="#">COMPETENCES</a></li>   
-            <li><a href="#">FORMATIONS</a></li>
-            <li><a href="#">PROJETS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about">A PROPOS</a></li>
+            <li><a href="#skills">COMPETENCES</a></li>
+            <li><a href="#formations">FORMATIONS</a></li>
+            <li><a href="#projets">PROJETS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
     <div class="box right">
         <a class="round" href="mailto:nml.lefevre@gmail.com">
-            <h5 class="contactMe top right">CONTACTEZ <br> MOI</h5>
+            <h2 class="contactMe top right">CONTACTEZ <br> MOI</h2>
         </a>
     </div>
 
+    <!-- HOME ##############################################################################################-->
     <section class="home">
 
-        <h1 class="title"> &nbsp DEVELOPPEUR WEB <br> &nbsp &nbsp  et WEB mobile <br> basé a <br>  &nbsp &nbsp &nbsp  paris </h1>
-    
-        <div class="img left"><a href="#about"><img  src="assets/img/arrow.svg" alt="arrow"></a></div>
+        <h1 class="title"> &nbsp DEVELOPPEUR WEB <br> &nbsp &nbsp et WEB mobile <br> basé a <br> &nbsp &nbsp &nbsp paris
+        </h1>
+
+        <div class="img left"><a href="#about"><img src="assets/img/arrow.svg" alt="arrow"></a></div>
 
     </section>
 
+    <!-- ABOUT ##############################################################################################-->
     <section class="about" id="about">
-        <h5> A PROPOS </h5>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
+        <h4> A PROPOS </h4>
+        <p class="p1"> Bonjour, mon nom est LEFEVRE Nicolas, Je suis passionné par le développement web et mobile, j'ai
+            donc décidé de me former dans ce domaine. </p>
+        <p class="p2"> Je suis actuellement en formation chez DonkeySchool, une école de développement web et mobile. Et
+            je suis à la recherche d'un stage pour compléter ma formation. </p>
+        <p class="p3"> Je suis disponible pour un entretien à tout moment. N'hésitez pas à me contacter. </p>
+
         <img class="pdp" src="assets/img/photoDeProfile.png" alt="Photo de Profil">
     </section>
 
+    <!-- SKILLS ##############################################################################################-->
     <section class="skills" id="skills">
         <h5> COMPETENCES </h5>
-        <p> Ceci son mes compétences </p>
+
         <ul class="icone">
             <li> <img src="assets/icon/html.svg" alt="html"> HTML</li>
             <li> <img src="assets/icon/css.svg" alt="css"> CSS</li>
@@ -77,46 +87,67 @@
 
     </section>
 
+<!-- FORMATIONS ##############################################################################################-->
     <section class="formations" id="formations">
-        <h5> FORMATIONS </h5>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. </p>
+        <h4> FORMATIONS </h4>
+        <div class="div1">
+            <h5>Formation développeur web et web mobile</h5>
+            <p> Aprentissage chez donkeyschool de git, HTML, CSS, PHP, Javascript, angular, SYMPHONY.</p>
+        </div>
+        <div class="div2">
+            <h5>Bac +2 BTS Electrotechnique en Alternance</h5>
+            <p> L’EA Gambetta Paris 2019 à 2021 </p>
+        </div>
+        <div class="div3">
+            <h5>Baccalauréat STI2D SIN</h5>
+            <p> Lycée Jean Perrin Saint-Ouen-l’Aumône 2017 à 2019 </p>
+        </div>
     </section>
-    
+
+<!-- PROJETS ##############################################################################################-->
+
     <section class="projets" id="projets">
         <h5> PROJETS </h5>
         <p> Voici mes projets </p>
-        <div class="card-grid">
+        <div></div>
+        <div class="cardGrid">
 
             <a class="card one" href="#">
-              <div class="card__background" style="background-image: url(https://pictures.abebooks.com/isbn/9781695667099-fr.jpg)"></div>
-              <div class="card__content">
-                <p class="card__category">ANGULAR</p>
-                <h3 class="card__heading">Pokedex</h3>
-              </div>
+                <div class="cardBackground">
+                    <img src="https://pictures.abebooks.com/isbn/9781695667099-fr.jpg" alt="pokedex">
+                </div>
+                <div class="cardContent">
+                    <p class="cardCategory">ANGULAR</p>
+                    <h3 class="cardHeading">Pokedex</h3>
+                </div>
             </a>
 
             <a class="card two" href="#">
-              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-              <div class="card__content">
-                <p class="card__category">PHP</p>
-                <h3 class="card__heading">DonkeyEvent</h3>
-              </div>
+                <div class="cardBackground">
+                    <img src="https://pictures.abebooks.com/isbn/9781695667099-fr.jpg" alt="pokedex">
+                </div>
+                <div class="cardContent">
+                    <p class="cardCategory">PHP</p>
+                    <h3 class="cardHeading">DonkeyEvent</h3>
+                </div>
             </a>
 
             <a class="card three" href="#">
-              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-              <div class="card__content">
-                <p class="card__category">ANGULAR & SYMFONY</p>
-                <h3 class="card__heading">GreenEat</h3>
-              </div>
+                <div class="cardBackground">
+                    <img src="https://pictures.abebooks.com/isbn/9781695667099-fr.jpg" alt="pokedex">
+                </div>
+                <div class="cardContent">
+                    <p class="cardCategory">ANGULAR & SYMFONY</p>
+                    <h3 class="cardHeading">GreenEat</h3>
+                </div>
             </a>
-
-          <div>
+        </div>
     </section>
 
+    <!-- CONTACT ###############################################################################################-->
     <section class="contact" id="contact">
-        <h5> CONTACT </h5>
-        <h1 class="mail"> nml.lefevre@gmail.com </h1>
+        <h4> CONTACT </h4>
+        <h1> nml.lefevre@gmail.com </h1>
 
         <h5> Mon github </h5>
         <ul>
@@ -129,6 +160,7 @@
         <p> &copy; 2023 - NML </p>
     </footer>
 
-    
+
 </body>
+
 </html>
